@@ -52,3 +52,5 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 `1 Etapa`: 16:10
 `2 Etapa`: 32:18 _props_
+`3 Etapa`: 40:42 _layouts_
+`4 Etapa`: 44:31 _paginas_
