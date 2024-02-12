@@ -55,7 +55,7 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 `3 Etapa`: 40:42 _layouts_
 `4 Etapa`: 44:31 _paginas_
 `5 Etapa`: 52:19 _modos de renderizado_
-``: 00:00 _páginas dinamicas_
+`6 Etapa`: 1:00:00 _páginas dinamicas_
 
 
 
