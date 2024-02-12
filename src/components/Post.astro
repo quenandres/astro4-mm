@@ -1,11 +1,12 @@
 ---
+const { post: { title, description, content, created_at } } = Astro.props;
 
 ---
 
 <article class="bg-[#1F2937] text-white max-w-sm px-5 py-6 flex flex-col gap-2 rounded">
     <img src="https://images.unsplash.com/photo-1682686581498-5e85c7228119?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-    <h2 class="text-2xl font-bold">The post title</h2>
-    <p>Description</p>
-    <p class="text-zinc-400">Cillum in anim consectetur veniam. Et tempor ea sunt excepteur ea est ex dolore irure laboris ut eiusmod. Reprehenderit ullamco officia amet irure velit do aute mollit deserunt nostrud deserunt minim. Sunt occaecat consectetur aliqua exercitation ea aute do laborum consequat. Nostrud fugiat dolore in irure magna enim est elit proident eiusmod eu. Ad cupidatat ipsum nisi nulla non deserunt est minim adipisicing. Cupidatat mollit anim laboris laborum consequat proident occaecat velit.</p>
-    <p class="text-zinc-300">11/02/2024 - 16min read</p>
+    <h2 class="text-2xl font-bold">{title}</h2>
+    <p>{description}</p>
+    <p class="text-zinc-400">{content.slice(0,100)}...</p>
+    <p class="text-zinc-300">{new Date(created_at).toLocaleDateString()} - 16min read</p>
 </article>

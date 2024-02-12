@@ -1,5 +1,7 @@
 ---
 import Post from '../components/Post.astro';
+const response = await fetch("http://localhost:3000/posts");
+const posts = await response.json();
 ---
 
 <html lang="en">
@@ -11,10 +13,11 @@ import Post from '../components/Post.astro';
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
-		<Post />
-		<Post />
-		<Post />
-		<Post />
+		<h1 class="text-center text-3xl font-bold mb-4 mt-3">Mis post</h1>
+		<div class="grid max-w-7xl mx-auto w-full justify-center justify-items-center items-center gap-4 px-2 sm:grid:cols-2 lg:grid-cols-3">
+			{
+			posts.map((post) => <Post post={post} />)
+			}
+		</div>
 	</body>
 </html>
