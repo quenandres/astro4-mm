@@ -54,3 +54,18 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 `2 Etapa`: 32:18 _props_
 `3 Etapa`: 40:42 _layouts_
 `4 Etapa`: 44:31 _paginas_
+`5 Etapa`: 52:19 _modos de renderizado_
+``: 00:00 _páginas dinamicas_
+
+
+
+# `Configuración de renderizado`
+
+- `astro.config.mjs`
+
+ ```mjs
+ export default defineConfig({
+  output: 'static', // Se seleccionan entre 3 opciones (static, hybrid, server)
+  integrations: [tailwind()]
+});
+ ```
