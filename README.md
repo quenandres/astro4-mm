@@ -56,6 +56,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 `4 Etapa`: 44:31 _paginas_
 `5 Etapa`: 52:19 _modos de renderizado_
 `6 Etapa`: 1:00:00 _páginas dinamicas_
+`7 Etapa`: 1:06:04 _markdown_
+`8 Etapa`: 1:10:52 _islas_
+`9 Etapa`: 1:13:30 _view translations_
 
 
 
