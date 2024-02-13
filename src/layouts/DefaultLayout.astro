@@ -1,3 +1,6 @@
+---
+import { ViewTransitions } from 'astro:transitions';
+---
 <html lang="en">
     <head>
         <slot name="header" >
@@ -7,6 +10,7 @@
             <meta name="generator" content={Astro.generator} />
             <title >Astro</title>
         </slot>
+        <ViewTransitions />
     </head>
     <body>
         <main>
